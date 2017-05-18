@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+  <head>
+    <title>SSO callback test</title>
+  </head>
+  <body>
+    <h1>IDMS SSO</h1>
+    <input id="email" placeholder="email"/>
+    <button onclick="window.location.href='http://localhost:4200?code=123&email=' + encodeURIComponent(document.getElementById('email').value)">Login</button>
+  </body>
+</html>
